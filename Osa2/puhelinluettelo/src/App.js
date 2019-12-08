@@ -61,16 +61,22 @@ const App = () => {
         }
         
         personService
-          .create(personObject)
+            .create(personObject)
             .then(returnedPerson => {
-            setPersons(persons.concat(returnedPerson))
-            setErrorMessage(
-              `${returnedPerson.name} added succesfully`
-            )
-            setTimeout(() => {
-              setErrorMessage('')
-            }, 2000)
-          })
+              setPersons(persons.concat(returnedPerson))
+              setErrorMessage(
+                `${returnedPerson.name} added succesfully`
+              )
+              setTimeout(() => {
+                setErrorMessage('')
+              }, 2000)
+            })
+            .catch(error => {
+              console.log(error.response.data)
+              setErrorMessage(
+                `Message: ${error}`
+              )
+            })
       }
       setNewName('')
       setNewNumber('')

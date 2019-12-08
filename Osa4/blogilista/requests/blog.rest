@@ -1,0 +1,8 @@
+post http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imtva2VpbHUyIiwiaWQiOiI1ZGVkMmJmNjQ4ZTViNjUxYzRhNzQyNzUiLCJpYXQiOjE1NzU4MjQ0MDF9.WRRpkl30OpBsuORPl2tw8QU_0rR152G0s2_BYNvPNiA
+
+{
+    "title": "hitteli",
+    "url": "urliurli"
+}
