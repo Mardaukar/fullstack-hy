@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "title": "titteli",
+            "author": "geneerinen",
+            "url": "www.generic.com"
+        },
+        {
+            "id": 2,
+            "title": "titteli2",
+            "author": "geneerinen2",
+            "url": "www.generic2.com"
+        }
+    ]
+}
